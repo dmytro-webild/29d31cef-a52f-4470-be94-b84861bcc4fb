@@ -117,52 +117,52 @@ export default function HomePage() {
     </SectionErrorBoundary>
   </div>
 
-  <dI v I d="founder" data-sectI on="founder">
-    <SectI onErrorBoundary name="founder">
-          <TestI monI alRatI ngCards
-      tag="Founder PrI ncI ple"
-      tI tle="A Note on Growth"
-      descrI ptI on="Most busI nesses don't need more marketI ng. They need more conversatI ons wI th qualI fI ed buyers."
-      testI monI als={[
+  <div id="founder" data-section="founder">
+    <SectionErrorBoundary name="founder">
+          <TestimonialRatingCards
+      tag="Founder Principle"
+      title="A Note on Growth"
+      description="Most businesses don't need more marketing. They need more conversations with qualified buyers."
+      testimonials={[
         {
           name: "Alex R.",
           role: "Founder, AlphaCorprp",
-          quote: "I ",
-          ratI ng: 5,
-          I mageSrc: "http://I mg.b2bpI c.net/free-photo/chaI r-front-busI nesswoman-sI ttI ng-caf_23-2147876643.jpg",
+          quote: "i",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/chair-front-businesswoman-sitting-caf_23-2147876643.jpg",
         },
         {
           name: "Sarah J.",
           role: "CEO, TechCorp",
-          quote: "GenGarden completely shI fted our pI pelI ne from scattered to predI ctable.",
-          ratI ng: 5,
-          I mageSrc: "http://I mg.b2bpI c.net/free-photo/room-wI th-wooden-desktop-comfortable-chaI r_116348-96.jpg",
+          quote: "GenGarden completely shifted our pipeline from scattered to predictable.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/room-with-wooden-desktop-comfortable-chair_116348-96.jpg",
         },
         {
           name: "Mark D.",
           role: "Founder, LeadCo",
-          quote: "Unmatched qualI fI catI on qualI ty. My sales team I s fI nally focusI ng on closI ng.",
-          ratI ng: 5,
-          I mageSrc: "http://I mg.b2bpI c.net/free-photo/modern-mI nI malI st-offI ce_23-2151780690.jpg",
+          quote: "Unmatched qualification quality. My sales team is finally focusing on closing.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-minimalist-office_23-2151780690.jpg",
         },
         {
           name: "Elena P.",
-          role: "DI rector, AgencyX",
-          quote: "FI nally, a partner that acts lI ke an extensI on of our I nternal team.",
-          ratI ng: 5,
-          I mageSrc: "http://I mg.b2bpI c.net/free-photo/offI ce-chaI r-stI ll-lI fe_23-2151149095.jpg",
+          role: "Director, AgencyX",
+          quote: "Finally, a partner that acts like an extension of our internal team.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/office-chair-still-life_23-2151149095.jpg",
         },
         {
           name: "Tom V.",
           role: "VP Sales, Growthly",
-          quote: "ConsI stency, clarI ty, and genuI ne results every sI ngle quarter.",
-          ratI ng: 5,
-          I mageSrc: "http://I mg.b2bpI c.net/free-photo/luxury-desI gn-modern-wooden-table-decor-generated-by-aI _188544-27803.jpg",
+          quote: "Consistency, clarity, and genuine results every single quarter.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/luxury-design-modern-wooden-table-decor-generated-by-ai_188544-27803.jpg",
         },
       ]}
     />
-    </SectI onErrorBoundary>
-  </dI v>
+    </SectionErrorBoundary>
+  </div>
 
   <div id="partnerships" data-section="partnerships">
     <SectionErrorBoundary name="partnerships">
