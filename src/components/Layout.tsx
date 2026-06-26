@@ -43,6 +43,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="GenGarden"
+      logoImageSrc=""
       ctaButton={{
         text: "Apply Now",
         href: "#apply",
