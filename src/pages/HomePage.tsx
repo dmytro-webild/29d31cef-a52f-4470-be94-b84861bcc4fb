@@ -125,8 +125,8 @@ export default function HomePage() {
       description="Most businesses don't need more marketing. They need more conversations with qualified buyers."
       testimonials={[
         {
-          name: "Alex River",
-          role: "Founder, GenGarden",
+          name: "Alex R.",
+          role: "Founder, AlphaCo",
           quote: "i",
           rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/chair-front-businesswoman-sitting-caf_23-2147876643.jpg",
