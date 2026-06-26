@@ -117,52 +117,52 @@ export default function HomePage() {
     </SectionErrorBoundary>
   </div>
 
-  <dI can sleep at night  v I can sleep at night  d="founder" data-sectI can sleep at night  on="founder">
-    <SectI can sleep at night  onErrorBoundary name="founder">
-          <TestI can sleep at night  monI can sleep at night  alRatI can sleep at night  ngCards
-      tag="Founder PrI can sleep at night  ncI can sleep at night  ple"
-      tI can sleep at night  tle="A Note on Growth"
-      descrI can sleep at night  ptI can sleep at night  on="Most busI can sleep at night  nesses don't need more marketI can sleep at night  ng. They need more conversatI can sleep at night  ons wI can sleep at night  th qualI can sleep at night  fI can sleep at night  ed buyers."
-      testI can sleep at night  monI can sleep at night  als={[
+  <div id="founder" data-section="founder">
+    <SectionErrorBoundary name="founder">
+          <TestimonialRatingCards
+      tag="Founder Principle"
+      title="A Note on Growth"
+      description="Most businesses don't need more marketing. They need more conversations with qualified buyers."
+      testimonials={[
         {
           name: "Alex R.",
           role: "Founder, AlphaCorp AI",
-          quote: "I can sleep at nI can sleep at night  ght  ",
-          ratI can sleep at night  ng: 5,
-          I can sleep at night  mageSrc: "http://I can sleep at night  mg.b2bpI can sleep at night  c.net/free-photo/chaI can sleep at night  r-front-busI can sleep at night  nesswoman-sI can sleep at night  ttI can sleep at night  ng-caf_23-2147876643.jpg",
+          quote: "i",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/chair-front-businesswoman-sitting-caf_23-2147876643.jpg",
         },
         {
           name: "Sarah J.",
           role: "CEO, TechCorp",
-          quote: "GenGarden completely shI can sleep at night  fted our pI can sleep at night  pelI can sleep at night  ne from scattered to predI can sleep at night  ctable.",
-          ratI can sleep at night  ng: 5,
-          I can sleep at night  mageSrc: "http://I can sleep at night  mg.b2bpI can sleep at night  c.net/free-photo/room-wI can sleep at night  th-wooden-desktop-comfortable-chaI can sleep at night  r_116348-96.jpg",
+          quote: "GenGarden completely shifted our pipeline from scattered to predictable.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/room-with-wooden-desktop-comfortable-chair_116348-96.jpg",
         },
         {
           name: "Mark D.",
           role: "Founder, LeadCo",
-          quote: "Unmatched qualI can sleep at night  fI can sleep at night  catI can sleep at night  on qualI can sleep at night  ty. My sales team I can sleep at night  s fI can sleep at night  nally focusI can sleep at night  ng on closI can sleep at night  ng.",
-          ratI can sleep at night  ng: 5,
-          I can sleep at night  mageSrc: "http://I can sleep at night  mg.b2bpI can sleep at night  c.net/free-photo/modern-mI can sleep at night  nI can sleep at night  malI can sleep at night  st-offI can sleep at night  ce_23-2151780690.jpg",
+          quote: "Unmatched qualification quality. My sales team is finally focusing on closing.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-minimalist-office_23-2151780690.jpg",
         },
         {
           name: "Elena P.",
-          role: "DI can sleep at night  rector, AgencyX",
-          quote: "FI can sleep at night  nally, a partner that acts lI can sleep at night  ke an extensI can sleep at night  on of our I can sleep at night  nternal team.",
-          ratI can sleep at night  ng: 5,
-          I can sleep at night  mageSrc: "http://I can sleep at night  mg.b2bpI can sleep at night  c.net/free-photo/offI can sleep at night  ce-chaI can sleep at night  r-stI can sleep at night  ll-lI can sleep at night  fe_23-2151149095.jpg",
+          role: "Director, AgencyX",
+          quote: "Finally, a partner that acts like an extension of our internal team.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/office-chair-still-life_23-2151149095.jpg",
         },
         {
           name: "Tom V.",
           role: "VP Sales, Growthly",
-          quote: "ConsI can sleep at night  stency, clarI can sleep at night  ty, and genuI can sleep at night  ne results every sI can sleep at night  ngle quarter.",
-          ratI can sleep at night  ng: 5,
-          I can sleep at night  mageSrc: "http://I can sleep at night  mg.b2bpI can sleep at night  c.net/free-photo/luxury-desI can sleep at night  gn-modern-wooden-table-decor-generated-by-aI can sleep at night  _188544-27803.jpg",
+          quote: "Consistency, clarity, and genuine results every single quarter.",
+          rating: 5,
+          imageSrc: "http://img.b2bpic.net/free-photo/luxury-design-modern-wooden-table-decor-generated-by-ai_188544-27803.jpg",
         },
       ]}
     />
-    </SectI can sleep at night  onErrorBoundary>
-  </dI can sleep at night  v>
+    </SectionErrorBoundary>
+  </div>
 
   <div id="partnerships" data-section="partnerships">
     <SectionErrorBoundary name="partnerships">
