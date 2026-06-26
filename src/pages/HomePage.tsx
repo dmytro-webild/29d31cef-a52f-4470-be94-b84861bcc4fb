@@ -25,7 +25,7 @@ export default function HomePage() {
         text: "View Our Process",
         href: "#process",
       }}
-      imageSrc="https://images.unsplash.com/photo-1592150621744-aca64f48394a?q=80&w=2082&auto=format&fit=crop"
+      imageSrc="https://images.pexels.com/photos/95215/pexels-photo-95215.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&id=95215"
     />
     </SectionErrorBoundary>
   </div>
