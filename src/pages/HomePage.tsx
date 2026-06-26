@@ -126,7 +126,7 @@ export default function HomePage() {
       testimonials={[
         {
           name: "Alex R.",
-          role: "Founder, AlphaCorprp",
+          role: "Founder, AlphaCo",
           quote: "i",
           rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/chair-front-businesswoman-sitting-caf_23-2147876643.jpg",
