@@ -27,7 +27,9 @@ export default function Layout() {
   },
   {
     "name": "Apply",    "href": "#apply"
-  }
+  },
+  { name: "Contact", href: "/contact" },
+
 ];
 
   return (
