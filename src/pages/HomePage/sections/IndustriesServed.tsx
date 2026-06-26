@@ -37,7 +37,10 @@ export default function IndustriesServedSection() {
                 "Cybersecurity",
                 "Logistics",
                 "Legal Services",
-                "Consulting"
+                "Consulting",
+                "Refinance",
+                "Health Insurance",
+                "Realtors"
               ].map((industry, idx) => (
                 <div key={idx} className="flex-shrink-0 flex items-center justify-center">
                   <span className="text-2xl md:text-4xl font-bold text-foreground whitespace-nowrap opacity-50 hover:opacity-100 transition-opacity duration-300">
