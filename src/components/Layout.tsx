@@ -8,32 +8,25 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
   {
-    "name": "Process",
-    "href": "#process"
+    "name": "Process",    "href": "#process"
   },
   {
-    "name": "Why Us",
-    "href": "#why-us"
+    "name": "Why Us",    "href": "#why-us"
   },
   {
-    "name": "Partnerships",
-    "href": "#partnerships"
+    "name": "Partnerships",    "href": "#partnerships"
   },
   {
-    "name": "Hero",
-    "href": "#hero"
+    "name": "Hero",    "href": "#hero"
   },
   {
-    "name": "Social Proof",
-    "href": "#social-proof"
+    "name": "Social Proof",    "href": "#social-proof"
   },
   {
-    "name": "Founder",
-    "href": "#founder"
+    "name": "Founder",    "href": "#founder"
   },
   {
-    "name": "Apply",
-    "href": "#apply"
+    "name": "Apply",    "href": "#apply"
   }
 ];
 
@@ -43,11 +36,9 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="GenGarden"
-      logoImageSrc=""
+      logoImageSrc="https://storage.googleapis.com/webild/default/no-image.jpg?id=saj0in"
       ctaButton={{
-        text: "Apply Now",
-        href: "#apply",
-      }}
+        text: "Apply Now",        href: "#apply"}}
      navItems={navItems} />
       </SectionErrorBoundary>
       <main className="flex-grow">
@@ -57,29 +48,19 @@ export default function Layout() {
         <FooterBasic
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "About",
-              href: "#",
-            },
+              label: "About",              href: "#"},
             {
-              label: "Methodology",
-              href: "#process",
-            },
+              label: "Methodology",              href: "#process"},
           ],
         },
         {
-          title: "Legal",
-          items: [
+          title: "Legal",          items: [
             {
-              label: "Privacy Policy",
-              href: "#",
-            },
+              label: "Privacy Policy",              href: "#"},
             {
-              label: "Terms of Service",
-              href: "#",
-            },
+              label: "Terms of Service",              href: "#"},
           ],
         },
       ]}
