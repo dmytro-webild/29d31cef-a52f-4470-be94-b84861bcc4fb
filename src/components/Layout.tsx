@@ -38,7 +38,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="GenGarden"
-      logoImageSrc="https://storage.googleapis.com/webild/default/no-image.jpg?id=saj0in"
+      logoImageSrc="https://storage.googleapis.com/webild/users/user_3B4njhQytmnEfqsURfc0omeJ1Xl/uploaded-1782578499546-t6ntkci9.png"
       ctaButton={{
         text: "Apply Now",        href: "#apply"}}
      navItems={navItems} />
