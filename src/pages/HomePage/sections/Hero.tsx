@@ -15,7 +15,7 @@ export default function HeroSection(): React.JSX.Element {
           description="We build predictable client acquisition systems that connect businesses with qualified buyers ready to start conversations."
           primaryButton={{
             text: "See If You Qualify",
-            href: "#apply",
+            href: "",
           }}
           secondaryButton={{
             text: "View Our Process",
