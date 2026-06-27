@@ -4,40 +4,19 @@ import { useState } from "react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import Calendar from "@/components/ui/Calendar";
 import { sendContactEmail } from "@/lib/api/email";
 
 const inputs = [
-  {
-    name: "name",
-    type: "text",
-    placeholder: "Full Name",
-    required: true
-  },
-  {
-    name: "email",
-    type: "email",
-    placeholder: "Work Email",
-    required: true
-  },
-  {
-    name: "phone",
-    type: "tel",
-    placeholder: "Phone Number",
-    required: false
-  },
-  {
-    name: "company",
-    type: "text",
-    placeholder: "Company Name",
-    required: false
-  }
+  { name: "name", type: "text", placeholder: "Name", required: true },
+  { name: "company", type: "text", placeholder: "Company", required: false },
+  { name: "email", type: "email", placeholder: "Email", required: true },
+  { name: "phone", type: "tel", placeholder: "Phone", required: false },
+  { name: "website", type: "url", placeholder: "Website", required: false },
+  { name: "challenge", type: "text", placeholder: "Biggest challenge getting leads?", required: true },
+  { name: "marketing", type: "text", placeholder: "Current marketing?", required: true }
 ];
-const textarea = {
-  name: "message",
-  placeholder: "Tell us about your current acquisition challenges...",
-  rows: 4,
-  required: true
-};
+const textarea = null;
 
 type InputField = {
   name: string;
@@ -76,6 +55,8 @@ const ContactInline = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(undefined as any);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -83,7 +64,7 @@ const ContactInline = () => {
     setError(null);
     try {
       await sendContactEmail({ formData });
-      undefined?.(formData);
+      setIsSubmitted(true);
       const reset: Record<string, string> = {};
       inputs.forEach((input) => {
         reset[input.name] = "";
@@ -104,6 +85,39 @@ const ContactInline = () => {
       <div className="w-content-width mx-auto">
         <ScrollReveal variant="fade" className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="p-6 md:p-10 card rounded">
+            {isSubmitted ? (
+              <div className="flex flex-col items-center gap-6 text-center">
+                <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+                  <p>Step 2</p>
+                </div>
+                <TextAnimation
+                  text="Pick a Time"
+                  variant="fade-blur"
+                  gradientText={true}
+                  tag="h2"
+                  className="text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-balance"
+                />
+                <TextAnimation
+                  text="Select a time on our calendar for your discovery call."
+                  variant="fade-blur"
+                  gradientText={false}
+                  tag="p"
+                  className="text-lg md:text-xl leading-snug text-balance"
+                />
+                <div className="w-full max-w-md mx-auto bg-background p-4 rounded card">
+                  <Calendar 
+                    selected={selectedDate} 
+                    onSelect={setSelectedDate} 
+                    className="mx-auto"
+                  />
+                </div>
+                {selectedDate && (
+                  <p className="text-sm text-accent mt-4">
+                    You selected: {selectedDate.toLocaleDateString()}
+                  </p>
+                )}
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               <div className="flex flex-col items-center gap-2 text-center">
                 <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
@@ -166,6 +180,7 @@ const ContactInline = () => {
                 )}
               </div>
             </form>
+            )}
           </div>
 
           <div className="h-100 md:h-auto card rounded overflow-hidden">
