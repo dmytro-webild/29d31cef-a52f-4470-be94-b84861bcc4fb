@@ -54,8 +54,8 @@ const NavbarFloatingLogo = ({ logo, logoImageSrc, navItems, ctaButton }: NavbarF
               <span className="text-xl font-medium text-foreground">{logo}</span>
             </a>
 
-            <button className="hidden"
-              className="flex items-center justify-center shrink-0 size-9 rounded cursor-pointer primary-button"
+            <button
+              className="hidden items-center justify-center shrink-0 size-9 rounded cursor-pointer primary-button"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
               aria-expanded={menuOpen}
