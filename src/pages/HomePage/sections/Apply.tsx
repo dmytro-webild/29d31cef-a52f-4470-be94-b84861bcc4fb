@@ -13,12 +13,12 @@ export default function ApplySection(): React.JSX.Element {
           tag="Qualification"
           text="See If You Qualify. To maintain service quality, we only accept a limited number of businesses each quarter. Answer a few questions to determine if we're a fit."
           primaryButton={{
-            text: "Apply For",
+            text: "Apply For Partnership",
             href: "",
           }}
           secondaryButton={{
             text: "Contact Support",
-            href: "/contact",
+            href: "#",
           }}
         />
         </SectionErrorBoundary>
