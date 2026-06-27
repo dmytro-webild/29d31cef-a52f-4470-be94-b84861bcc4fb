@@ -10,17 +10,11 @@ export default function ApplySection(): React.JSX.Element {
     <div id="apply" data-section="apply">
         <SectionErrorBoundary name="apply">
               <ContactCta
-          tag="Qualification"
-          text="See If You Qualify. To maintain service quality, we only accept a limited number of businesses each quarter. Answer a few questions to determine if we're a fit."
-          primaryButton={{
-            text: "Apply For Partnership",
-            href: "",
-          }}
-          secondaryButton={{
-            text: "Contact Support",
-            href: "#",
-          }}
-        />
+        tag="Qualification"
+        text="See If You Qualify. To maintain service quality, we only accept a limited number of businesses each quarter. Answer a few questions to determine if we're a fit."
+        primaryButton={{"href":"https://cal.com/gen-garden-59lhks/15min","text":"Apply For Partnership"}}
+        secondaryButton={{"href":"/contact","text":"Contact Support"}}
+      />
         </SectionErrorBoundary>
       </div>
   );
