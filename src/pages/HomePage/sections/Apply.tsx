@@ -18,7 +18,7 @@ export default function ApplySection(): React.JSX.Element {
           }}
           secondaryButton={{
             text: "Contact Support",
-            href: "#",
+            href: "/contact",
           }}
         />
         </SectionErrorBoundary>
