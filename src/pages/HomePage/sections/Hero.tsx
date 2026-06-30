@@ -10,19 +10,16 @@ export default function HeroSection(): React.JSX.Element {
     <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
               <HeroSplit
-          tag="Selective Growth Partner"
-          title="Growth Shouldn't Be Random."
-          description="We build predictable client acquisition systems that connect businesses with qualified buyers ready to start conversations."
-          primaryButton={{
-            text: "See If You Qualify",
-            href: "",
-          }}
-          secondaryButton={{
+        tag="Selective Growth Partner"
+        title="Growth Shouldn't Be Random."
+        description="We build predictable client acquisition systems that connect businesses with qualified buyers ready to start conversations."
+        primaryButton={{"text":"See If You Qualify","href":"#apply"}}
+        secondaryButton={{
             text: "View Our Process",
             href: "#process",
           }}
-          imageSrc="https://images.pexels.com/photos/95215/pexels-photo-95215.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&id=95215"
-        />
+        imageSrc="https://picsum.photos/seed/1939100567/1200/800"
+      />
         </SectionErrorBoundary>
       </div>
   );
