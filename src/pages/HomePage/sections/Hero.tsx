@@ -18,7 +18,7 @@ export default function HeroSection(): React.JSX.Element {
             text: "View Our Process",
             href: "#process",
           }}
-        imageSrc="https://picsum.photos/seed/1939100567/1200/800"
+        imageSrc="https://images.pexels.com/photos/95215/pexels-photo-95215.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&id=95215"
       />
         </SectionErrorBoundary>
       </div>
